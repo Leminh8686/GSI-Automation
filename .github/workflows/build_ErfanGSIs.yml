@@ -14,11 +14,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1901EX_11_OTA_1040_all_BbUuFdfQYcIr.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: Realmeme
+  ROM_URL: https://hugeota.d.miui.com/V12.0.5.0.QJVCNXM/miui_VANGOGH_V12.0.5.0.QJVCNXM_253473e9fe_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: Miui12_2008
   TZ: Asia/Kolkata
-  MIR: bit
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/Leminh8686/ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
